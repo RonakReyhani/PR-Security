@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico"); */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 
 /*
 	Introspect by TEMPLATED
@@ -1743,7 +1744,7 @@ body,
 input,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 15pt;
   font-weight: 300;
   line-height: 2;
