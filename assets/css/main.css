@@ -97,6 +97,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-weight: 700;
 }
 
 article,
@@ -2737,7 +2738,7 @@ header h6 + p {
 }
 
 header p {
-  color: #717171;
+  color: #111111;
 }
 
 /* Table */
@@ -3336,7 +3337,7 @@ body {
   transition: color 0.2s ease-in-out;
   display: inline-block;
   padding: 0 2em;
-  color: #ffffff;
+  color: #cfc590;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -3750,7 +3751,7 @@ body.is-loading #banner:after {
 }
 
 #aboutUs {
-  padding: 2em 0 2em 0;
+  padding: 2em 0 0em 0;
 }
 
 @media screen and (max-width: 980px) {
