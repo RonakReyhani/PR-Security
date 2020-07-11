@@ -1819,7 +1819,7 @@ i {
 }
 
 p {
-  margin: 0 0 2em 0;
+  margin: 1rem 0 1rem 0;
 }
 
 h1,
@@ -2139,6 +2139,7 @@ button.alt,
   background-color: transparent;
   box-shadow: inset 0 0 0 2px #a69b75;
   color: #a69b75 !important;
+  border-radius: 0.5rem;
 }
 
 input[type="submit"].alt:hover,
@@ -2146,7 +2147,7 @@ input[type="reset"].alt:hover,
 input[type="button"].alt:hover,
 button.alt:hover,
 .button.alt:hover {
-  background: #fceced;
+  background: #3b3d30;
 }
 
 input[type="submit"].alt:active,
@@ -2925,7 +2926,7 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"].alt:hover,
 .wrapper.style1 button.alt:hover,
 .wrapper.style1 .button.alt:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #3b3d30;
 }
 
 .wrapper.style1 input[type="submit"].alt:active,
@@ -2933,7 +2934,7 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"].alt:active,
 .wrapper.style1 button.alt:active,
 .wrapper.style1 .button.alt:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #3b3d30;
 }
 
 .wrapper.style1 input[type="submit"].alt.icon:before,
@@ -3116,7 +3117,7 @@ table.alt tbody tr td {
 .wrapper.style2 input[type="button"].alt:hover,
 .wrapper.style2 button.alt:hover,
 .wrapper.style2 .button.alt:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: #3b3d30;
 }
 
 .wrapper.style2 input[type="submit"].alt:active,
@@ -3419,7 +3420,7 @@ body {
 }
 
 .navPanelToggle *:before {
-  color: #fff;
+  color: #cfc590;
   display: block;
   font-size: 16px;
   height: 2.25em;
@@ -3447,7 +3448,7 @@ body {
   right: 0;
   top: 0;
   background: #1c1c1c;
-  color: #fff;
+  color: #cfc590;
   height: 100%;
   max-width: 80%;
   width: 20em;
@@ -3468,7 +3469,7 @@ body {
 
 #navPanel a:not(.close) {
   border-top: solid 1px rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #cfc590;
   font-weight: 700;
   display: block;
   padding: 0.75em 0;
@@ -3617,8 +3618,9 @@ body {
 #banner button.alt,
 #banner .button.alt {
   background-color: #3b3d30;
-  box-shadow: inset 0 0 0 2px #fff;
-  color: #ffffff !important;
+  box-shadow: inset 0 0 0 2px #cfc590;
+  border-radius: 0.5rem;
+  color: #cfc590 !important;
 }
 
 #banner input[type="submit"].alt:hover,
@@ -3626,7 +3628,7 @@ body {
 #banner input[type="button"].alt:hover,
 #banner button.alt:hover,
 #banner .button.alt:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #3b3d30;
 }
 
 #banner input[type="submit"].alt:active,
@@ -3901,9 +3903,9 @@ body.is-loading #banner:after {
 
 #footer {
   background-color: #a69b75;
-  color: #fff;
-  padding: 4em 0 2em 0;
-  background: #a69b75;
+  color: #cfc590;
+  padding: 1rem;
+  background: #3b3d30;
 }
 
 #footer input,
@@ -3983,7 +3985,7 @@ body.is-loading #banner:after {
 #footer input[type="button"].alt:hover,
 #footer button.alt:hover,
 #footer .button.alt:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #3b3d30;
 }
 
 #footer input[type="submit"].alt:active,
@@ -4008,7 +4010,7 @@ body.is-loading #banner:after {
 #footer button.special,
 #footer .button.special {
   background-color: #ffffff;
-  color: #a69b75 !important;
+  color: #cfc590 !important;
 }
 
 #footer label {
@@ -4082,9 +4084,11 @@ body.is-loading #banner:after {
 }
 
 #footer .inner {
+  display: flex;
   max-width: 65em;
   width: calc(100% - 6em);
   margin: 0 auto;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -4106,12 +4110,12 @@ body.is-loading #banner:after {
 
 @media screen and (max-width: 980px) {
   #footer {
-    padding: 4em 0 2em 0;
+    padding: 0 2em 0;
   }
 }
 
 @media screen and (max-width: 736px) {
   #footer {
-    padding: 2em 0 0.1em 0;
+    padding: 0.5em 0 0.1em 0;
   }
 }
