@@ -113,7 +113,6 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
@@ -3772,6 +3771,14 @@ body.is-loading #banner:after {
 
 #aboutUs {
   padding: 2em 0 0em 0;
+}
+
+#contactUs {
+  padding: 2em 0 0em 0;
+  margin-bottom: 2rem;
+}
+#contactUs h2 {
+  margin: 0;
 }
 
 @media screen and (max-width: 980px) {
