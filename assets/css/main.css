@@ -183,6 +183,9 @@ body {
 .container {
   width: 80em;
 }
+#client2-p {
+  margin-bottom: 10rem;
+}
 
 @media screen and (max-width: 1680px) {
   .container.\31 25\25 {
@@ -205,6 +208,9 @@ body {
 
   .container {
     width: 80em;
+  }
+  #client2-p {
+    margin-bottom: 10rem;
   }
 }
 
@@ -230,6 +236,9 @@ body {
   .container {
     width: 65em;
   }
+  #client2-p {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -253,6 +262,9 @@ body {
 
   .container {
     width: 90%;
+  }
+  #client2-p {
+    margin-bottom: 0;
   }
 }
 
@@ -278,6 +290,9 @@ body {
   .container {
     width: 90% !important;
   }
+  #client2-p {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -301,6 +316,9 @@ body {
 
   .container {
     width: 90% !important;
+  }
+  #client2-p {
+    margin-bottom: 0;
   }
 }
 
@@ -1756,7 +1774,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 13pt;
+    font-size: 15pt;
   }
 }
 
@@ -1765,7 +1783,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 13pt;
+    font-size: 15pt;
   }
 }
 
@@ -1783,7 +1801,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 14pt;
   }
 }
 
@@ -1792,7 +1810,7 @@ textarea {
   input,
   select,
   textarea {
-    font-size: 12pt;
+    font-size: 13pt;
   }
 }
 
