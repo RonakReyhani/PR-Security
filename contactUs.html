@@ -26,10 +26,10 @@
     </header>
     <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
-    <!-- aboutUs -->
-    <section id="contactUs" class="aboutUs">
+    <!-- contactUs -->
+    <section id="contactUs">
       <div class="inner">
-        <header id="aboutUs">
+        <header>
           <h2>GETTING IN TOUCH WITH US IS EASY!</h2>
           <small>
             Our team is ready to organize your immediate security needs and answer any questions you may have!
@@ -38,32 +38,36 @@
       </div>
     </section>
 
-    <!-- Two -->
-    <!-- Footer -->
-    <section id="footer">
+    <!-- contact Form -->
+    <section id="contactForm">
       <div class="inner">
-      
-          Contact us now: <br /><span class="icon fa-phone"> (+61) 478 014 120</span>
-        </p>
         <form method="post" action="#">
-          <h4>
+          <h5>
+            For general inquiries please contact us at: <br /><span class="icon fa-phone"> (+61) 478 014 120</span>
+          </h5>
+          <h5>
             Service Inquiry:
-          </h4>
+          </h5>
           <div class="field half first">
-            <label for="name">Name</label>
+            <label for="name">Name *</label>
             <input type="text" name="name" id="name" />
           </div>
           <div class="field half">
-            <label for="email">Email</label>
+            <label for="email">Email *</label>
             <input type="text" name="email" id="email" />
           </div>
           <div class="field">
-            <label for="message">Message</label>
+            <label for="name">Reason for enquiry</label>
+            <input type="text" name="Reason for enquiry" id="name" />
+          </div>
+          <div class="field">
+            <label for="message">Message *</label>
             <textarea name="message" id="message" rows="6"></textarea>
           </div>
           <ul class="actions">
             <li><input type="submit" value="Send Message" class="alt" /></li>
           </ul>
+          <small>* fields with star are required.</small>
           <!-- <div class="copyright">
             <ul class="icons">
               <li>
@@ -75,6 +79,13 @@
             </ul>
           </div> -->
         </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="inner">
+        <p>Copyright © 2020 PR Safari Group</p>
       </div>
     </section>
 

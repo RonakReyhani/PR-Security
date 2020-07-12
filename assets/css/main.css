@@ -2638,6 +2638,7 @@ ul.actions li {
   display: inline-block;
   padding: 0 1em 0 0;
   vertical-align: middle;
+  margin-bottom: 1rem;
 }
 
 ul.actions li:last-child {
@@ -2959,7 +2960,7 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"].alt.icon:before,
 .wrapper.style1 button.alt.icon:before,
 .wrapper.style1 .button.alt.icon:before {
-  color: #f8d1d2;
+  color: #cfc590;
 }
 
 .wrapper.style1 input[type="submit"].special,
@@ -3022,23 +3023,23 @@ table.alt tbody tr td {
 }
 
 .wrapper.style1 ::-webkit-input-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 .wrapper.style1 :-moz-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 .wrapper.style1 ::-moz-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 .wrapper.style1 :-ms-input-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 .wrapper.style1 .formerize-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 .wrapper.style1 ul.alt li {
@@ -3046,11 +3047,11 @@ table.alt tbody tr td {
 }
 
 .wrapper.style1 header p {
-  color: #f8d1d2;
+  color: #cfc590;
 }
 
 .wrapper.style1 table tbody tr {
-  border-color: #fff;
+  border-color: #cfc590;
 }
 
 .wrapper.style1 table tbody tr:nth-child(2n + 1) {
@@ -3058,19 +3059,19 @@ table.alt tbody tr td {
 }
 
 .wrapper.style1 table th {
-  color: #ffffff;
+  color: #cfc590;
 }
 
 .wrapper.style1 table thead {
-  border-bottom-color: #fff;
+  border-bottom-color: #cfc590;
 }
 
 .wrapper.style1 table tfoot {
-  border-top-color: #fff;
+  border-top-color: #cfc590;
 }
 
 .wrapper.style1 table.alt tbody tr td {
-  border-color: #fff;
+  border-color: #cfc590;
 }
 
 .wrapper.style2 {
@@ -4101,11 +4102,11 @@ body.is-loading #banner:after {
 }
 
 #footer :-ms-input-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 #footer .formerize-placeholder {
-  color: #f8d1d2 !important;
+  color: #cfc590 !important;
 }
 
 #footer .inner {
@@ -4141,6 +4142,229 @@ body.is-loading #banner:after {
 
 @media screen and (max-width: 736px) {
   #footer {
+    padding: 0.5em 0 0.1em 0;
+  }
+}
+
+/* Contact form */
+
+#contactForm {
+  color: #cfc590;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  color: #cfc590;
+}
+
+#contactForm a {
+  color: #cfc590;
+}
+
+#contactForm strong,
+#contactForm b {
+  color: #cfc590;
+}
+
+#contactForm h1,
+#contactForm h2,
+#contactForm h3,
+#contactForm h4,
+#contactForm h5,
+#contactForm h6 {
+  color: #cfc590;
+}
+
+#contactForm blockquote {
+  border-left-color: #cfc590;
+}
+
+#contactForm code {
+  background: none;
+  border-color: #cfc590;
+}
+
+#contactForm hr {
+  border-bottom-color: #cfc590;
+}
+
+#contactForm input[type="submit"],
+#contactForm input[type="reset"],
+#contactForm input[type="button"],
+#contactForm button,
+#contactForm .button {
+  background-color: #cfc590;
+  color: #cfc590 !important;
+}
+
+#contactForm input[type="submit"]:hover,
+#contactForm input[type="reset"]:hover,
+#contactForm input[type="button"]:hover,
+#contactForm button:hover,
+#contactForm .button:hover {
+  background-color: #cfc590;
+}
+
+#contactForm input[type="submit"]:active,
+#contactForm input[type="reset"]:active,
+#contactForm input[type="button"]:active,
+#contactForm button:active,
+#contactForm .button:active {
+  background-color: #cfc590;
+}
+
+#contactForm input[type="submit"].alt,
+#contactForm input[type="reset"].alt,
+#contactForm input[type="button"].alt,
+#contactForm button.alt,
+#contactForm .button.alt {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #cfc590;
+  color: #cfc590 !important;
+}
+
+#contactForm input[type="submit"].alt:hover,
+#contactForm input[type="reset"].alt:hover,
+#contactForm input[type="button"].alt:hover,
+#contactForm button.alt:hover,
+#contactForm .button.alt:hover {
+  background: #cfc590;
+}
+
+#contactForm input[type="submit"].alt:active,
+#contactForm input[type="reset"].alt:active,
+#contactForm input[type="button"].alt:active,
+#contactForm button.alt:active,
+#contactForm .button.alt:active {
+  background-color: #cfc590;
+}
+
+#contactForm input[type="submit"].alt.icon:before,
+#contactForm input[type="reset"].alt.icon:before,
+#contactForm input[type="button"].alt.icon:before,
+#contactForm button.alt.icon:before,
+#contactForm .button.alt.icon:before {
+  color: #cfc590;
+}
+
+#contactForm input[type="submit"].special,
+#contactForm input[type="reset"].special,
+#contactForm input[type="button"].special,
+#contactForm button.special,
+#contactForm .button.special {
+  background-color: #ffffff;
+  color: #cfc590 !important;
+}
+
+#contactForm label {
+  color: #cfc590;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="password"],
+#contactForm input[type="email"],
+#contactForm select,
+#contactForm textarea {
+  background: none;
+  border-color: #cfc590;
+}
+
+#contactForm input[type="text"]:focus,
+#contactForm input[type="password"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+  border-color: #cfc590;
+  box-shadow: 0 0 0 1px #cfc590;
+}
+
+#contactForm .select-wrapper:before {
+  color: #cfc590;
+}
+
+#contactForm input[type="checkbox"] + label,
+#contactForm input[type="radio"] + label {
+  color: #cfc590;
+}
+
+#contactForm input[type="checkbox"] + label:before,
+#contactForm input[type="radio"] + label:before {
+  background: none;
+  border-color: #cfc590;
+}
+
+#contactForm input[type="checkbox"]:checked + label:before,
+#contactForm input[type="radio"]:checked + label:before {
+  background-color: #cfc590;
+  border-color: #cfc590;
+  color: #cfc590;
+}
+
+#contactForm input[type="checkbox"]:focus + label:before,
+#contactForm input[type="radio"]:focus + label:before {
+  border-color: #cfc590;
+  box-shadow: 0 0 0 1px #cfc590;
+}
+
+#contactForm ::-webkit-input-placeholder {
+  color: #cfc590 !important;
+}
+
+#contactForm :-moz-placeholder {
+  color: #cfc590 !important;
+}
+
+#contactForm ::-moz-placeholder {
+  color: #cfc590 !important;
+}
+
+#contactForm :-ms-input-placeholder {
+  color: #cfc590 !important;
+}
+
+#contactForm .formerize-placeholder {
+  color: #cfc590 !important;
+}
+
+#contactForm .inner {
+  display: grid;
+  max-width: 65em;
+  width: calc(100% - 6em);
+  margin: 0 auto;
+  justify-content: center;
+  background: #3b3d30;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  #contactForm .inner {
+    max-width: 90%;
+    width: 90%;
+  }
+}
+
+#contactForm .copyright {
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+#contactForm .copyright a {
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+  #contactForm {
+    padding: 0 2em 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #contactForm {
     padding: 0.5em 0 0.1em 0;
   }
 }
