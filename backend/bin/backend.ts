@@ -11,7 +11,7 @@ const prodBucketName = "prsafariwebsite";
 
 const app = new cdk.App();
 
-new PipelineStack(app, "PRSafariBuildPipeline", {
+new PipelineStack(app, "PRSafariBuildPipelineStack", {
   env: buildAccount,
   prodEnv: prodAccount,
   prodResources: { websiteBucket: prodBucketName },
