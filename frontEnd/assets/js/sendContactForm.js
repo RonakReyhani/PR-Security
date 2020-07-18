@@ -1,4 +1,4 @@
-function submitToAPI(e) {
+$(function submitToAPI(e) {
   e.preventDefault();
   var URL = "https://cxifjxkle8.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us";
 
@@ -56,4 +56,4 @@ function submitToAPI(e) {
       alert("Sorry! Something went wrong!");
     },
   });
-}
+});
