@@ -90,7 +90,7 @@ export class PipelineStack extends cdk.Stack {
     );
 
     // The Build Pipeline
-    new codepipeline.Pipeline(this, "PRSafariBuildPipeline", {
+    new codepipeline.Pipeline(this, "PRSafariPipeline", {
       stages: [
         {
           stageName: "Source",
@@ -114,14 +114,6 @@ export class PipelineStack extends cdk.Stack {
               input: sourceOutput,
               outputs: [cdkBuildOutput],
               runOrder: 1,
-            }),
-            new codepipeline_actions.CloudFormationCreateUpdateStackAction({
-              actionName: "AdministerPipeline",
-              templatePath: cdkBuildOutput.atPath(`${this.stackName}.template.json`),
-              stackName: this.stackName,
-              adminPermissions: true,
-              parameterOverrides: {},
-              runOrder: 2,
             }),
           ],
         },
