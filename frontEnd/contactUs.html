@@ -11,6 +11,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- receive email jquery-->
+    <script src="../frontEnd/assets/js/sendContactForm.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -42,7 +45,7 @@
     <!-- contact Form -->
     <section id="contactForm">
       <div class="inner">
-        <form method="post" action="#">
+        <form method="post" id="contact-form">
           <h5>
             For general inquiries please contact us at: <br /><span class="icon fa-phone"> (+61) 478 014 120</span>
           </h5>
@@ -51,22 +54,28 @@
           </h5>
           <div class="field half first">
             <label for="name">Name *</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name-input" class="form-control" />
           </div>
           <div class="field half">
             <label for="email">Email *</label>
-            <input type="text" name="email" id="email" />
+            <input type="text" name="email" id="email-input" class="form-control" />
           </div>
           <div class="field">
             <label for="name">Reason for enquiry</label>
-            <input type="text" name="Reason for enquiry" id="name" />
+            <input type="text" name="Reason for enquiry" id="subject-input" class="form-control" />
           </div>
           <div class="field">
             <label for="message">Message *</label>
-            <textarea name="message" id="message" rows="6"></textarea>
+            <textarea name="message" id="message" rows="6" class="form-control"></textarea>
           </div>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys"
+            class="form-control"
+            style="width: 100%;"
+          ></div>
           <ul class="actions">
-            <li><input type="submit" value="Send Message" class="alt" /></li>
+            <li><input type="submit" value="Send Message" class="alt" onClick="submitToAPI(event)" /></li>
           </ul>
           <small>* fields with star are required.</small>
           <!-- <div class="copyright">
