@@ -23,7 +23,7 @@
 <path d="M101.099 18.8889L93.9509 15.4382" stroke="#CFC590" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="114.112" y1="25.5" x2="96.1061" y2="25.5" stroke="#CFC590" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
-<filter id="filter0_f" x="55.737" y="35.2469" width="123.252" height="14.147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f" x="55.737" y="35.247" width="123.252" height="14.147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="0.125" result="effect1_foregroundBlur"/>
