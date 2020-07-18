@@ -183,7 +183,7 @@ body {
   width: 80em;
 }
 #client2-p {
-  margin-bottom: 10rem;
+  margin-bottom: 30rem;
 }
 
 @media screen and (max-width: 1680px) {
@@ -209,7 +209,7 @@ body {
     width: 80em;
   }
   #client2-p {
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
   }
 }
 
@@ -236,7 +236,7 @@ body {
     width: 65em;
   }
   #client2-p {
-    margin-bottom: 0;
+    margin-bottom: 10rem;
   }
 }
 
@@ -3387,6 +3387,7 @@ body {
 
 #nav {
   display: inline-block;
+  margin-left: 10rem;
 }
 
 @media screen and (max-width: 980px) {
