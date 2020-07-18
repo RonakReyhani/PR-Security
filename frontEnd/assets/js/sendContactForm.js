@@ -1,6 +1,6 @@
-$(document).ready(function submitToAPI(e) {
+function submitToAPI(e) {
   e.preventDefault();
-  var URL = "https://hvv9nvl8rf.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us";
+  var URL = "https://cxifjxkle8.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us";
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name-input").val())) {
@@ -11,20 +11,23 @@ $(document).ready(function submitToAPI(e) {
     alert("Please enter your email address");
     return;
   }
-
-  if ($("#subject").val() == "") {
-    alert("Please ");
-    return;
-  }
-
   var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
   if (!reeamil.test($("#email-input").val())) {
     alert("Please enter valid email address");
     return;
   }
+  if ($("#subject-input").val() == "") {
+    alert("Please select a title for your enquiry");
+    return;
+  }
+
+  if ($("#message").val() == "") {
+    alert("Please tell us how we can help!");
+    return;
+  }
 
   var name = $("#name-input").val();
-  var subject = $("#subject").val();
+  var subject = $("#subject-input").val();
   var email = $("#email-input").val();
   var message = $("#message").val();
   var data = {
@@ -53,4 +56,4 @@ $(document).ready(function submitToAPI(e) {
       alert("Sorry! Something went wrong!");
     },
   });
-});
+}
