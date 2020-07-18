@@ -3355,7 +3355,7 @@ body {
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   display: inline-block;
-  padding: 0 2em;
+  padding: 0 1em;
   color: #cfc590;
   text-decoration: none;
   text-transform: uppercase;
