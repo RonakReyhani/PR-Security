@@ -7,7 +7,7 @@ import * as certmgr from "@aws-cdk/aws-certificatemanager";
 interface envProps extends cdk.StackProps {
   acmCertArn: string;
   bucketName: string;
-  buildAccount: string;
+  prodAccount: string;
   domainName: string;
   env: {
     account: string;
@@ -20,16 +20,16 @@ export class StaticWebsiteStack extends cdk.Stack {
     super(scope, id, props);
 
     const oai = new cloudfront.OriginAccessIdentity(this, "OAI");
-    const websiteBucket = new s3.Bucket(this, "prsafariwebsite", {
+    const websiteBucket = new s3.Bucket(this, "prsafariHostingBucket", {
       websiteIndexDocument: "index.html",
       publicReadAccess: false,
       bucketName: props.bucketName,
     });
 
     websiteBucket.grantRead(oai);
-    websiteBucket.grantReadWrite(new iam.AccountPrincipal(props.buildAccount));
+    websiteBucket.grantReadWrite(new iam.AccountPrincipal(props.prodAccount));
 
-    const cloudfrontDist = new cloudfront.CloudFrontWebDistribution(this, "PRSafariWebsiteHostingDistribution", {
+    const cloudfrontDist = new cloudfront.CloudFrontWebDistribution(this, "PRSafariHostingDistribution", {
       originConfigs: [
         {
           s3OriginSource: {
