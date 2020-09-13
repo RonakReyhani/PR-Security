@@ -1,6 +1,5 @@
 function submitToAPI(e) {
   e.preventDefault();
-  var URL = "https://cxifjxkle8.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us";
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name-input").val())) {
@@ -44,6 +43,9 @@ function submitToAPI(e) {
     crossDomain: "true",
     contentType: "application/json; charset=utf-8",
     data: JSON.stringify(data),
+    headers: {
+      Accept: "application/json",
+    },
 
     success: function () {
       // clear form and show a success message
@@ -54,6 +56,7 @@ function submitToAPI(e) {
     error: function () {
       // show an error message
       alert("Sorry! Something went wrong!");
+      document.getElementById("contact-form").reset();
     },
   });
 }
