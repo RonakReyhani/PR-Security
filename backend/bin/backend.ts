@@ -17,7 +17,7 @@ new PipelineStack(app, "PRSafariBuildStack", {
 });
 
 new StaticWebsiteStack(app, "StaticWebsiteStack", {
-  acmCertArn: "arn:aws:acm:ap-southeast-2:477156370231:certificate/156bc034-0102-44f3-a1a0-6e8b57331077",
+  acmCertArn: "	arn:aws:acm:us-east-1:477156370231:certificate/ab3c3226-c1c3-44bf-b271-81b802424854",
   bucketName: prodBucketName,
   prodAccount: prodAccount.account,
   domainName: prodDomainName,
