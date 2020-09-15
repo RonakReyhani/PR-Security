@@ -7,6 +7,7 @@ import { StaticWebsiteStack } from "../lib/Frontend/frontend";
 const prodAccount = { account: "477156370231", region: "ap-southeast-2" };
 const prodDomainName = "prsafarigroup.com.au";
 const prodBucketName = "prsafariwebsite";
+const prodSubDomainName = "www.prsafarigroup.com.au";
 
 const app = new cdk.App();
 
@@ -21,5 +22,6 @@ new StaticWebsiteStack(app, "StaticWebsiteStack", {
   bucketName: prodBucketName,
   prodAccount: prodAccount.account,
   domainName: prodDomainName,
+  prodSubDomainName: prodSubDomainName,
   env: prodAccount,
 });

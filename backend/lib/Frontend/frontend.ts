@@ -9,6 +9,7 @@ interface envProps extends cdk.StackProps {
   bucketName: string;
   prodAccount: string;
   domainName: string;
+  prodSubDomainName: string;
   env: {
     account: string;
     region: string;
@@ -55,7 +56,7 @@ export class StaticWebsiteStack extends cdk.Stack {
       viewerCertificate: cloudfront.ViewerCertificate.fromAcmCertificate(
         certmgr.Certificate.fromCertificateArn(this, "AcmCertCloudfront", props.acmCertArn),
         {
-          aliases: [props.domainName],
+          aliases: [props.domainName, props.prodSubDomainName],
           sslMethod: cloudfront.SSLMethod.SNI,
           securityPolicy: cloudfront.SecurityPolicyProtocol.TLS_V1_1_2016,
         },
