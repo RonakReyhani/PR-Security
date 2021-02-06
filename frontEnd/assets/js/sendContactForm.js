@@ -53,10 +53,6 @@ function submitToAPI(e) {
       document.getElementById("contact-form").reset();
       location.reload();
     },
-    error: function () {
-      // show an error message
-      alert("Sorry! Something went wrong!", error);
-      document.getElementById("contact-form").reset();
-    },
+
   });
 }
