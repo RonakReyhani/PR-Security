@@ -43,21 +43,9 @@ function submitToAPI(e) {
     crossDomain: "true",
     contentType: "application/json; charset=utf-8",
     data: JSON.stringify(data),
-    beforeSend: function (xhr) {
-      xhr.setRequestHeader('Accept', 'application/json');
-      xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-      xhr.setRequestHeader('Access-Control-Allow-Headers', "*");
-      xhr.setRequestHeader('Access-Control-Allow-Methods', 'OPTIONS,POST,GET');
-      xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
-    },
     headers: {
       "Accept": "application/json",
       "Origin": "https://prsafarigroup.com.au",
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "application/json;charset=UTF-8",
-      "Access-Control-Allow-Credentials": true,
-      "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
-      "Access-Control-Allow-Headers": "*",
     },
 
 
