@@ -37,7 +37,7 @@ function submitToAPI(e) {
   };
 
   $.ajax({
-    type: "POST",
+    type: "OPTIONS",
     url: "https://cxifjxkle8.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us",
     dataType: "json",
     crossDomain: "true",
