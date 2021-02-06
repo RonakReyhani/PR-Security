@@ -43,8 +43,19 @@ function submitToAPI(e) {
     crossDomain: "true",
     contentType: "application/json; charset=utf-8",
     data: JSON.stringify(data),
+    // beforeSend: function (xhr) {
+    //   xhr.setRequestHeader('Accept', 'application/json');
+    //   xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    //   xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type');
+    //   xhr.setRequestHeader('Access-Control-Allow-Methods', 'OPTIONS,POST,GET');
+    //   xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
+    // },
     headers: {
-      Accept: "application/json",
+      "Accept": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+      "Access-Control-Allow-Headers": "Content-Type",
     },
 
     success: function () {
@@ -55,6 +66,7 @@ function submitToAPI(e) {
     },
     error: function () {
       // show an error message
+      console.log(error)
       alert("Sorry! Something went wrong!");
       document.getElementById("contact-form").reset();
     },
