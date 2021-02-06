@@ -46,7 +46,7 @@ function submitToAPI(e) {
     beforeSend: function (xhr) {
       xhr.setRequestHeader('Accept', 'application/json');
       xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-      xhr.setRequestHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Access-Control-Allow-Origin, Accept, Content-Type, Access-Control-Allow-Credentials, Access-Control-Allow-Methods"');
+      xhr.setRequestHeader('Access-Control-Allow-Headers', "*");
       xhr.setRequestHeader('Access-Control-Allow-Methods', 'OPTIONS,POST,GET');
       xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
     },
@@ -56,7 +56,7 @@ function submitToAPI(e) {
       "Content-Type": "application/json;charset=UTF-8",
       "Access-Control-Allow-Credentials": true,
       "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
-      "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Accept, Content-Type, Access-Control-Allow-Credentials, Access-Control-Allow-Methods",
+      "Access-Control-Allow-Headers": "*",
     },
 
     success: function () {
