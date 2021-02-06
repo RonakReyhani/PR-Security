@@ -45,7 +45,7 @@ function submitToAPI(e) {
     data: JSON.stringify(data),
     headers: {
       "Accept": "application/json",
-      "Origin": "https://prsafarigroup.com.au",
+
     },
 
 
