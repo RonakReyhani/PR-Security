@@ -47,18 +47,15 @@ function submitToAPI(e) {
       "Accept": "application/json",
 
     },
-
-
-
     success: function () {
       // clear form and show a success message
-      alert("Thank you! One of our  ");
+      alert("Thank you! One of our team members will contact you.");
       document.getElementById("contact-form").reset();
       location.reload();
     },
     error: function () {
       // show an error message
-      alert("Sorry! Something went wrong!");
+      alert("Sorry! Something went wrong!", error);
       document.getElementById("contact-form").reset();
     },
   });
