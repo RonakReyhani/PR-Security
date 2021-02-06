@@ -37,7 +37,7 @@ function submitToAPI(e) {
   };
 
   $.ajax({
-    type: "OPTION",
+    type: "POST",
     url: "https://cxifjxkle8.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us",
     dataType: "json",
     crossDomain: "true",
@@ -52,6 +52,7 @@ function submitToAPI(e) {
     },
     headers: {
       "Accept": "application/json",
+      "Origin": "https://prsafarigroup.com.au",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json;charset=UTF-8",
       "Access-Control-Allow-Credentials": true,
@@ -59,18 +60,14 @@ function submitToAPI(e) {
       "Access-Control-Allow-Headers": "*",
     },
 
-    Access to XMLHttpRequest at 'https://cxifjxkle8.execute-api.ap-southeast-2.amazonaws.com/prod/contact-us' 
-    from origin 'https://prsafarigroup.com.au' has been blocked by CORS policy:
-      Request header field access- control - allow - origin is not allowed by Access - Control - Allow - Headers in preflight response.
 
 
-
-      success: function () {
-        // clear form and show a success message
-        alert("Thank you!");
-        document.getElementById("contact-form").reset();
-        location.reload();
-      },
+    success: function () {
+      // clear form and show a success message
+      alert("Thank you! One of our  ");
+      document.getElementById("contact-form").reset();
+      location.reload();
+    },
     error: function () {
       // show an error message
       alert("Sorry! Something went wrong!");
