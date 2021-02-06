@@ -53,9 +53,10 @@ function submitToAPI(e) {
     headers: {
       "Accept": "application/json",
       "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json;charset=UTF-8",
       "Access-Control-Allow-Credentials": true,
       "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
-      "Access-Control-Allow-Headers": "Content-Type",
+      "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Accept, Content-Type, Access-Control-Allow-Credentials, Access-Control-Allow-Methods",
     },
 
     success: function () {
@@ -66,7 +67,6 @@ function submitToAPI(e) {
     },
     error: function () {
       // show an error message
-      console.log(error)
       alert("Sorry! Something went wrong!");
       document.getElementById("contact-form").reset();
     },
